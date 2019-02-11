@@ -1,0 +1,9 @@
+{% if transactions %}
+    <ul>
+    {% for transaction in transactions %}
+        <li>{{ transaction.id }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No transactions are available.</p>
+{% endif %}
